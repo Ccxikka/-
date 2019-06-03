@@ -5,8 +5,6 @@
 
 using namespace std;
 
-void Permutation(char* pStr, char* pBegin);
-
 void getall(string oristr, int begin, int size, set<string>& allstr, string add)
 {
 	int j = 0;
