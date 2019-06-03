@@ -27,11 +27,8 @@ void getall(string oristr, int begin, int size, set<string>& allstr, string add)
 	}
 	else
 	{
-		for (int i = size; i > 0; i--)
-		{
-			getall(oristr, begin + 1, size - 1, allstr, add + curstr[0]);
-			getall(oristr, begin + 1, size, allstr, add);
-		}
+		getall(oristr, begin + 1, size - 1, allstr, add + curstr[0]);
+		getall(oristr, begin + 1, size, allstr, add);
 	}
 
 }
